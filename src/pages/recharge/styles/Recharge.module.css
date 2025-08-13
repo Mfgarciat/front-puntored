@@ -1,0 +1,202 @@
+.container {
+  max-width: 800px;
+  min-width: 600px;
+  padding: 2rem;
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.containerRecharge{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.historyContainer{
+    width: 1000px;
+    padding: 2rem;
+    background: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.submitButton {
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.summaryContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.successMessage {
+  color: #4CAF50;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.errorMessage {
+  background-color: #fee2e2;
+  border: 1px solid #fca5a5;
+  color: #dc2626;
+  padding: 1rem;
+  border-radius: 0.375rem;
+  margin-bottom: 1rem;
+}
+
+
+.historyTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.historyTable th, .historyTable td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.historyTable th:nth-child(4),
+.historyTable td:nth-child(4) {
+  text-align: right;
+}
+
+
+.statusBadge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.8em;
+}
+
+.statusBadge.completed {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.statusBadge.pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.statusBadge.failed {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.actions{
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.printButton{
+  background-color:  rgb(227, 8, 125);
+  color:white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentDetails{
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.detailButton{
+  width: 100%;
+  background-color: #4CAF50;
+  color:white;
+  display: flex ;
+  justify-content: center;
+  align-items: center;
+}
+
+.detailButton:hover{
+  background-color: #45a049;
+}
+
+.viewButton{
+  outline: none;
+  background-color: gray;
+  color:white;
+  margin: 0;
+  
+}
+
+.filterControls {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.searchInput {
+  min-width: 12rem;
+  margin-top: 0.5rem;
+  display: block;
+  padding:  0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+.backButton {
+  background: none;
+  border: none;
+  color: #666666;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.backButton:hover {
+  background-color: transparent;
+  text-decoration: underline;
+  outline: none;
+}
+
+
+.icon{
+  font-size: 1.5rem;
+  color: white;
+  margin-right: 0.5rem;
+}
+
+.label {
+  display: block;
+  font-weight: 500;
+  color: #333;
+}

@@ -1,0 +1,22 @@
+.historyTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.historyTable th,
+.historyTable td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.historyTable th:nth-child(5),
+.historyTable td:nth-child(5) {
+  text-align: right;
+}
+
+.historyTable th:nth-child(6),
+.historyTable td:nth-child(6) {
+  display: flex;
+  justify-content: center;
+}

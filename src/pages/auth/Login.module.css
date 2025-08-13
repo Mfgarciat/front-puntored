@@ -1,0 +1,56 @@
+.loginContainer {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginForm {
+  max-width: 32rem;
+  width: 100%;
+  padding: 2rem;
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.errorMessage {
+  background-color: #fee2e2;
+  border: 1px solid #fca5a5;
+  color: #dc2626;
+  padding: 1rem;
+  border-radius: 0.375rem;
+  margin-bottom: 1rem;
+}
+
+.contentButton {
+  padding: 0.5rem;
+}
+
+.logoContainer {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoImage {
+  height: 50px;
+  /* Ajusta según el tamaño de tu logo */
+  width: auto;
+}
+
+.titleContainer {
+  border-top: 1px solid #e3087d;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+
+.iconoLogin {
+
+  font-size: 1rem;
+  color: white;
+  margin-right: 0.5rem;
+}
