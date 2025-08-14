@@ -186,6 +186,10 @@ https://front-puntored.onrender.com
 
   ### 📌 Notas importantes
   - El plan gratuito de Render entra en reposo después de 15 min sin tráfico.
+  - Comando para habilitar el servidor de back
+    ```
+    https://api.render.com/deploy/srv-d2dvfa3e5dus73fbl4ag?key=GHc6GWtHWKQ
+    ```
   - Habilitar CORS en backend si el frontend está en otro dominio.
   - Render ofrece logs en tiempo real para depuración.
 
