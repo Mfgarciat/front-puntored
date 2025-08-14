@@ -29,8 +29,8 @@ const Registration = () => {
 
     const validateForm = (name, value) => {
         if (name === 'name') {
-            if (!value.trim()) {
-                setError('El nombre es obligatorio');
+            if (!value.trim() && value.length <= 20) {
+                setError('El nombre es obligatorio y debe tener maximo 20 caracteres');
             } else {
                 setError(null);
             }
@@ -38,7 +38,7 @@ const Registration = () => {
         else if (name === 'document') {
             const docRegex = /^\d{6,15}$/;
             if (!docRegex.test(value) && value.length > 0) {
-                setError('Documento inválido (solo números, mínimo 6 dígitos)');
+                setError('Documento inválido (solo números, mínimo 10 dígitos)');
             } else {
                 setError(null);
             }
