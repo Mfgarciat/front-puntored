@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import styles from './header.module.css';
+import styles from './Header.module.css';
 import logo from '../../assets/logo-puntored.png';
 import { useAuth } from '../../hooks/useAuth'; 
 import { MdLogout } from "react-icons/md";
