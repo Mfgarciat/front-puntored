@@ -168,7 +168,7 @@ https://front-puntored.onrender.com
       ```bash
       npm install && npm run build
       ```
-    - **Publish Directory:**
+  - **Publish Directory:**
       ```
       dist
       ```
