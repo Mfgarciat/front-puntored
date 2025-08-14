@@ -149,7 +149,7 @@ const Registration = () => {
                         type="text"
                         label="Nombres y Apellidos"
                         placeholder="Ej: Maria Pérez"
-                        maxLength="100"
+                        maxLength="20"
                         value={formData.name}
                         onChange={handleChange}
                         required
@@ -160,7 +160,7 @@ const Registration = () => {
                             type="text"
                             label="Documento de Identidad"
                             placeholder="Ej: 123456789"
-                            maxLength="20"
+                            maxLength="10"
                             value={formData.document}
                             onChange={handleChange}
                             required
