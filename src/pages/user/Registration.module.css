@@ -1,0 +1,91 @@
+.registrationContainer {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.registrationForm {
+    max-width: 32rem;
+    width: 100%;
+    padding: 2rem;
+    background: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.errorMessage {
+    background-color: #fee2e2;
+    border: 1px solid #fca5a5;
+    color: #dc2626;
+    padding: 1rem;
+    border-radius: 0.375rem;
+    margin-bottom: 1rem;
+}
+
+.contentButton {
+    padding: 0.5rem;
+}
+
+.logoContainer {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoImage {
+    height: 50px;
+    width: auto;
+}
+
+.titleContainer {
+    border-top: 1px solid #e3087d;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+
+.iconoRegistration {
+
+    font-size: 1rem;
+    color: white;
+    margin-right: 0.5rem;
+}
+
+.row {
+    display: flex;
+    gap: 1rem;
+}
+
+.row>div {
+    flex: 1;
+}
+
+.successMessage {
+    background-color: #d4edda; /* Verde claro */
+    color: #155724; /* Verde oscuro */
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #c3e6cb;
+    font-weight: 500;
+}
+
+
+.backButton {
+    background: none;
+    border: none;
+    color: #666666;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.backButton:hover {
+    background-color: transparent;
+    text-decoration: underline;
+    outline: none;
+}

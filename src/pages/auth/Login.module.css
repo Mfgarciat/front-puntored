@@ -37,7 +37,6 @@
 
 .logoImage {
   height: 50px;
-  /* Ajusta según el tamaño de tu logo */
   width: auto;
 }
 
@@ -54,3 +53,20 @@
   color: white;
   margin-right: 0.5rem;
 }
+
+.registerButton {
+  background: none;
+  border: none;
+  color: #666666;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.registerButton:hover {
+ background-color: transparent;
+  text-decoration: underline;
+  outline: none;
+}
+

@@ -7,8 +7,8 @@ import NewRecharge from './pages/recharge/pages/NewRecharge';
 import RechargeSummary from './pages/recharge/pages/RechargeSummary';
 import RechargeHistory from './pages/recharge/pages/RechargeHistory';
 import Header from './components/header/Header';
-import NoDataMessage from './components/noDataMessage/NoDataMessage';
 import './App.css';
+import Registration from './pages/user/Registration';
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
         <Header />
         <Routes>         
           <Route path="/" element={<Login />} />
+          <Route path="/user/registration" element={<Registration />} />
           <Route path="/recharge/new" element={<PrivateRoute><NewRecharge /></PrivateRoute>} />
           <Route path="/recharge/summary" element={<PrivateRoute><RechargeSummary /></PrivateRoute>} />
           <Route path="/recharge/history" element={<PrivateRoute><RechargeHistory /></PrivateRoute>} />

@@ -93,7 +93,7 @@ const NewRecharge = () => {
     };
 
     if (loading) {
-        return <Loader/>;
+        return <Loader />;
     }
 
 
@@ -109,6 +109,11 @@ const NewRecharge = () => {
                     ← Regresar
                 </Button>
                 <h2 className={styles.typingText}>Nueva Recarga Móvil</h2>
+                {error && (
+                    <div className={`${styles.errorMessage} ${showForm ? styles.visible : styles.hidden}`}>
+                        {error}
+                    </div>
+                )}
                 <form onSubmit={handleSubmit} className={`${styles.form} ${showForm ? styles.visible : styles.hidden}`}>
                     <Input
                         id="phoneNumber"
@@ -143,11 +148,7 @@ const NewRecharge = () => {
                             }))}
                         />
                     </div>
-                    {error && (
-                        <div className={`${styles.errorMessage} ${showForm ? styles.visible : styles.hidden}`}>
-                            {error}
-                        </div>
-                    )}
+
                     <Button
                         type="submit"
                         className={styles.detailButton}

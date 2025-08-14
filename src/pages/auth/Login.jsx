@@ -7,7 +7,7 @@ import { MdLogin } from "react-icons/md";
 import Button from '../../components/button/Button';
 import Input from '../../components/input/Input';
 import styles from './Login.module.css';
-import apiClient from '../../api/apiClient'; // ajusta la ruta según tu proyecto
+import apiClient from '../../api/apiClient'; 
 
 
 const Login = () => {
@@ -94,6 +94,16 @@ const Login = () => {
               {loading ? 'Iniciando sesión...' : 'Iniciar sesión'}
             </Button>
           </div>
+
+          <Button
+            type="button"
+            Icon={MdLogin}
+            onClick={() => navigate('/user/registration')}
+            className={styles.registerButton}
+          >
+            ¿No tienes usuario? Registrate
+          </Button>
+
         </form>
       </div>
     </div>

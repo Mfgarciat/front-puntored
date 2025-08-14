@@ -74,7 +74,7 @@ const RechargeHistory = () => {
     {
       key: 'supplierName',
       title: 'Operador',
-      render: (tx) => operators.find(op => tx.supplierId === op.id).name
+      render: (tx) => (operators ? operators.find(op => tx.supplierId === op.id).name : tx.supplierId) 
     },
     {
       key: 'phoneNumber',
