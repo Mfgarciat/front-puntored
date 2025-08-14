@@ -29,8 +29,8 @@ const Registration = () => {
 
     const validateForm = (name, value) => {
         if (name === 'name') {
-            if (!value.trim() && value.length <= 20) {
-                setError('El nombre es obligatorio y debe tener maximo 20 caracteres');
+            if (!value.trim() && value.length <= 100) {
+                setError('El nombre es obligatorio y debe tener maximo 100 caracteres');
             } else {
                 setError(null);
             }
@@ -38,7 +38,7 @@ const Registration = () => {
         else if (name === 'document') {
             const docRegex = /^\d{6,15}$/;
             if (!docRegex.test(value) && value.length > 0) {
-                setError('Documento inválido (solo números, mínimo 10 dígitos)');
+                setError('Documento inválido (solo números, mínimo 20 dígitos)');
             } else {
                 setError(null);
             }
@@ -149,7 +149,7 @@ const Registration = () => {
                         type="text"
                         label="Nombres y Apellidos"
                         placeholder="Ej: Maria Pérez"
-                        maxLength="20"
+                        maxLength="100"
                         value={formData.name}
                         onChange={handleChange}
                         required
@@ -160,7 +160,7 @@ const Registration = () => {
                             type="text"
                             label="Documento de Identidad"
                             placeholder="Ej: 123456789"
-                            maxLength="10"
+                            maxLength="20"
                             value={formData.document}
                             onChange={handleChange}
                             required
